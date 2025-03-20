@@ -3,6 +3,8 @@ body {
     color: #e9ecef;
 }
 
+
+
 nav a {
     color: #e9ecef;
     text-decoration: none;
@@ -55,6 +57,7 @@ nav {
         position: fixed;
         top: 0;
         width: 100%;
+        margin-bottom: 100px;
     }
 }
 
@@ -65,4 +68,23 @@ nav {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/* scrolle element */
+.show
+{
+    display: block;
+}
+
+.noshow
+{
+    display: none;
+}
+
+
+.cards-h{
+    height: 400px;
+    min-width: 300px;
+    min-height: 200px;
+    overflow: scroll;
 }

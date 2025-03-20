@@ -84,8 +84,9 @@ nav {
 
 .cards-h{
     height: 400px;
-    min-width: 300px;
-    min-height: 200px;
+    width: 300px;
+    /* min-width: 300px; */
+    /* min-height: 200px; */
     overflow: scroll;
 }
 

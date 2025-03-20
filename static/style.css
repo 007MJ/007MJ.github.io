@@ -70,7 +70,7 @@ nav {
     }
 }
 
-/* scrolle element */
+/* card element */
 .show
 {
     display: block;
@@ -87,4 +87,11 @@ nav {
     min-width: 300px;
     min-height: 200px;
     overflow: scroll;
+}
+
+.my-card{
+    background-color: #e9ecef;
+    color: #212529;
+    padding: 10px;
+    border-radius: 5px;
 }

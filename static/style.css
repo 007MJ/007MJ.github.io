@@ -23,6 +23,7 @@ nav {
     width: 200px;
     height: 200px;
     object-fit: contain;
+    box-shadow: rgba(105, 105, 240, 0.25) 0px 50px 100px -20px, rgba(237, 236, 236, 0.3) 0px 30px 60px -30px;
 }
 
 .bio{
@@ -94,5 +95,40 @@ nav {
     background-color: #e9ecef;
     color: #212529;
     padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* scrool bar  */
+ .container-wrapper {
+    width: 100%;
+    /* position: absolute; */
+    overflow: hidden;
+    transform: translate(-50, -50);
+    /* border: #7290ae solid 1px; */
+    padding: 5px;
+}
+
+.container-slide {
+    display: flex;
+    gap:10px;
+    overflow-x: auto;
+    cursor: grab;
+    scroll-behavior: smooth;
+    border: none;
+    scrollbar-width: none;
+    /* -ms-overflow-style: none; */
+}
+
+.container-slide.dragging {
+    cursor: grabbing;
+}
+
+.slide {
+    min-width: 300px;
+    transition: transform 0.3s ease-in-out;
+    background-color: #7290ae;
+    padding: 10px;
+    box-shadow: rgba(162, 162, 240, 0.25) 0px 30px 60px -12px inset, rgba(241, 241, 241, 0.3) 0px 18px 36px -18px inset;
     border-radius: 5px;
 }
